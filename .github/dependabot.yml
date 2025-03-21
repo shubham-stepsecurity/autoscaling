@@ -1,0 +1,61 @@
+version: 2
+updates:
+  - package-ecosystem: github-actions
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /autoscale-scheduler
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /autoscaler-agent
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /cluster-autoscaler
+    schedule:
+      interval: daily
+
+  - package-ecosystem: gomod
+    directory: /
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm-controller
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm-daemon
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm-kernel
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm-runner
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm-vxlan-controller
+    schedule:
+      interval: daily
+
+  - package-ecosystem: docker
+    directory: /neonvm/samples/vm-example
+    schedule:
+      interval: daily
+
+  - package-ecosystem: pip
+    directory: /
+    schedule:
+      interval: daily
